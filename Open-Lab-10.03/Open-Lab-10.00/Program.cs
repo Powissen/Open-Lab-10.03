@@ -30,7 +30,6 @@ namespace Open_Lab_10._03
         public void Title(string NewTitle) 
         { 
             title = NewTitle;
-            Console.WriteLine("Title: " + title);
         }
         public void Pages(int NewPages) 
         {
@@ -39,17 +38,14 @@ namespace Open_Lab_10._03
             {
                 pages = 1;
             }
-            Console.WriteLine("Pages: " + pages);
         }
         public void Category(string NewCategory) 
         { 
             category = NewCategory;
-            Console.WriteLine("Category: " + category);
         }
         public void Author(string NewAuthor) 
         { 
             author = NewAuthor;
-            Console.WriteLine("Author: " + author);
         }
         public void ReleaseDate(int NewReleaseDate) 
         { 
@@ -58,7 +54,6 @@ namespace Open_Lab_10._03
             {
                 releaseDate = -1;
             }
-            Console.WriteLine("Release date: " + releaseDate);
         }
 
 
