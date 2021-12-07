@@ -14,8 +14,11 @@ namespace Open_Lab_10._03
             LOTR.Category("Category");
             LOTR.Author("Author");
             LOTR.ReleaseDate(2020);
+            Console.WriteLine(LOTR.ToString());
         }
     }
+    
+    
     public class Book
     {
         public string title;
@@ -59,14 +62,10 @@ namespace Open_Lab_10._03
         }
 
 
-        public void WriteAllVariables()
+        public override string ToString()
         {
-            Console.WriteLine("Title: " + title);
-            Console.WriteLine("Pages: " + pages);
-            Console.WriteLine("Category: " + category);
-            Console.WriteLine("Author: " + author);
-            Console.WriteLine("Release date: " + releaseDate);
-
+            string output = title + pages + cathegory + author + releaseDate;
+            return output;
         }
     }
 }
